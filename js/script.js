@@ -40,6 +40,8 @@ createApp({
     prev() {
         this.currentImage = (this.currentImage - 1 + this.slides.length) % this.slides.length;
     },
-  
+    changeSlide(index) {
+        this.currentImage = index;
+    }
 }
 }).mount("#app");
